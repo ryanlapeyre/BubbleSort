@@ -54,15 +54,15 @@ void BubbleSort2DimensionalArray(int arrayElements2Dimensional[][SORTSIZE] )
     int secondCounter = 0;
     int thirdCounter = 0;
     int spareItem = 0;
-    for(firstCounter = 0; firstCounter < SORTSIZE; firstCounter++ )
+    for(firstCounter = 0; firstCounter < SORTSIZE; firstCounter++ ) // row counter
     {    
-            for(thirdCounter = 0; thirdCounter < SORTSIZE; thirdCounter++)
+            for(thirdCounter = 0; thirdCounter < SORTSIZE; thirdCounter++) // column counter
             {
                 //We have another nested for loop here to visit all of the elements in this 2Dimensional array
                 //It's so we can visit all of the rows in this array. The next loop is for the columns, which are sorted.
                 //The next loop is the actual sorting loop, which compares elements next to each other and swaps them if 
                 // it's needed.
-                for(secondCounter = 0; secondCounter < SORTSIZE - 1; secondCounter++)
+                for(secondCounter = 0; secondCounter < SORTSIZE - 1; secondCounter++) // column sort counter
                 {
                     if(arrayElements2Dimensional[thirdCounter][secondCounter] < arrayElements2Dimensional[thirdCounter][secondCounter + 1]) 
                     {
