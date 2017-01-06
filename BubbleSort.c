@@ -88,7 +88,7 @@ void BubbleSortPointers(int* pointerElements)
         {
             if ( *(pointerElements + secondCounter + 1) < *(pointerElements + secondCounter) )
             {
-                //Pay attention to how we're sorting if the next element is smaller.. 
+                //Pay attention to how we're sorting if the next element is smaller.
                 //Thus, if we have a condition to sort if this element is smaller, our sort will be least to greatest.
                 spareItem = *(pointerElements + secondCounter + 1);
                 *(pointerElements + secondCounter + 1) = *(pointerElements +secondCounter);
