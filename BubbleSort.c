@@ -56,7 +56,7 @@ void BubbleSort2DimensionalArray(int arrayElements2Dimensional[][SORTSIZE] )
     int spareItem = 0;
     for(firstCounter = 0; firstCounter < SORTSIZE; firstCounter++ ) // row counter
     {    
-            for(thirdCounter = 0; thirdCounter < SORTSIZE; thirdCounter++) // column counter
+            for(thirdCounter = 0; thirdCounter < SORTSIZE; thirdCounter++) // row counter where the "bubbling" occurs
             {
                 //We have another nested for loop here to visit all of the elements in this 2Dimensional array
                 //It's so we can visit all of the rows in this array. The next loop is for the columns, which are sorted.
